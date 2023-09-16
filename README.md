@@ -26,7 +26,9 @@ The Employee Database Management Application provides a user-friendly interface 
 - **View Employees**: List all employee details with options to update or delete.
    - **Update Employee**: Edit or change an employee's data in the database.
 - **Delete Employee**: Remove an employee and their data from the database.
+   - **Delete the Employee datas by their name if Employee name not in the Dtatbase means, it shows Employee name not present in the Database.
 - **Search Employee**: Find and view an employee's data by entering their name.
+   - **View the Employee datas by their name if Employee name not in the Dtatbase means, it shows Employee name not present in the Database.
 
 ## Prerequisites
 
