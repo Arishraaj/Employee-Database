@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>DB</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+        <h1>Employee DataBase Using Django/Flask & Mysql</h1>
+
+        <h3>
+            {% with messages = get_flashed_messages() %}
+                {% if messages  %}
+                    {% for message in messages %}
+                        {{message}}
+                    {% endfor %}
+                 {% endif %}
+                {% endwith %}
+
+        </h3>
+        <tr>
+            <th><button class="my_button" type="button"><a href="{{url_for('addUser')}}">Add</a></button></th>
+            <th><button class="my_button" type="button"><a href="{{url_for('listall')}}">View</a></button></th>
+            <th><button class="my_button" type="button"><a href="{{url_for('delete')}}">Delete </a></button></th>
+            <th><button class="my_button" type="button"><a href="{{url_for('search')}}">Search</a></button></th>
+    </tr>
+    </body>
+</html>
+
+

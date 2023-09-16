@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>DB</title>
+    </head>
+    <body>
+        <h1>Employee Details</h1>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <table >
+            <tr>
+                <th class="head_row" >ID</th>
+                <th class="head_row" >NAME</th>
+                <th class="head_row" >AGE</th>               
+                <th class="head_row" >DEPARTMENT</th>
+            </tr>
+            {% for data in datas %}
+            <tr>
+                <td class="data_row" >{{data.ID}}</td>               
+                <td class="data_row" >{{data.NAME}}</td>               
+                <td class="data_row" >{{data.AGE}}</td>               
+                <td class="data_row" >{{data.DEPARTMENT}}</td>
+                <td><button class="edit_button" type="button"><a href="{{url_for('edituser',id=data.ID)}}">Update</a></button></td>
+            </tr>
+            {% endfor %}
+        </table>
+        <button class="my_button" type="button"><a href="{{url_for('home')}}">Back</a></button>
+    </body>
+</html>

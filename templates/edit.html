@@ -1,0 +1,20 @@
+
+<html >
+<head>
+    <title>Edit</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <h1>Edit Users</h1>
+</head>
+<body>
+<form action=" " method="post">
+    <label>Name</label>
+    <input type="text" name="name" value="{{datas.NAME}}" required>
+     <label>Age</label>
+    <input type="text" name="age" value="{{datas.AGE}}" required>
+     <label>Department</label>
+    <input type="text" name="department" value="{{datas.DEPARTMENT}}" required>
+    <input type="submit" class="add_button" value="Save">
+</form>
+<button class="my_button" type="button"><a href="{{url_for('listall')}}">Back</a></button>
+</body>
+</html>
