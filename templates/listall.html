@@ -18,10 +18,12 @@
                 <td class="data_row" >{{data.NAME}}</td>               
                 <td class="data_row" >{{data.AGE}}</td>               
                 <td class="data_row" >{{data.DEPARTMENT}}</td>
-                <td><button class="edit_button" type="button"><a href="{{url_for('edituser',id=data.ID)}}">Update</a></button></td>
+
+                <th><a href="{{url_for('edituser',id=data.ID)}}"><button class="edit_button" type="button">Update</button></a></th>
             </tr>
             {% endfor %}
         </table>
-        <button class="my_button" type="button"><a href="{{url_for('home')}}">Back</a></button>
+       
+        <a href="{{url_for('home')}}"><button class="my_button" type="button">Back</button></a>
     </body>
 </html>
