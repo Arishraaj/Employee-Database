@@ -17,11 +17,12 @@
             <p>Name not present in the database.</p>
         {% else %}
             <h2>Result:</h2>
+            <p>ID: {{ result['Id'] }}</p>
             <p>Name: {{ result['Name'] }}</p>
             <p>Age: {{ result['Age'] }}</p>
             <p>Department: {{ result['Department'] }}</p>
         {% endif %}
     {% endif %}
-    <button class="my_button" type="button"><a href="{{url_for('home')}}">Back</a></button>
+    <a href="{{url_for('home')}}"><button class="my_button" type="button">Back</button></a>
 </body>
 </html>
