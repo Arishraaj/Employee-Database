@@ -55,7 +55,7 @@ Before running the application, ensure that you have the following:
 - `/add` - Add a new employee.
 - `/view/edit/<employee_name>` - Edit an existing employee's details.
 - `/delete/<employee_name>` - Delete an employee.
-- - `/search/<employee_name>` - View an employee details.
+- `/search/<employee_name>` - View an employee details.
  
 ## Database Schema
 
