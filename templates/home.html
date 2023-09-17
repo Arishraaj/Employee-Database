@@ -7,11 +7,12 @@
         <h1>Employee DataBase Using Django/Flask & Mysql</h1>
 
 
-        <tr>
-            <th><button class="my_button" type="button"><a href="{{url_for('addUser')}}">Add</a></button></th>
-            <th><button class="my_button" type="button"><a href="{{url_for('listall')}}">View</a></button></th>
-            <th><button class="my_button" type="button"><a href="{{url_for('delete')}}">Delete </a></button></th>
-            <th><button class="my_button" type="button"><a href="{{url_for('search')}}">Search</a></button></th>
+      <tr>
+            <th><a href="{{url_for('addUser')}}"><button class="my_button" type="button">Add</button></a></th>
+            <th><a href="{{url_for('listall')}}"><button class="my_button" type="button">View</button></a></th>
+            <th><a href="{{url_for('delete')}}"><button class="my_button" type="button">Delete</button></a></th>
+            <th><a href="{{url_for('search')}}"><button class="my_button" type="button">Search</button></a></th>
+           
     </tr>
     </body>
 </html>
