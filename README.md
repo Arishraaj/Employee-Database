@@ -18,6 +18,8 @@ Here is the Link : https://arishraaj.pythonanywhere.com/
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Screenshots](#screenshots)
+- [Endpoints](#Endpoints)
+- [Database Schema](#database-schema)
 - [Contributing](#contributing)
 
 ## Overview
@@ -46,6 +48,24 @@ Before running the application, ensure that you have the following:
 
 ![Screenshot 1](screenshots/Screenshot1.png)
 ![Screenshot 2](screenshots/Screenshot2.png)
+
+## Endpoints
+
+- `/` - Home page displaying a list of to add, View, edit, Delete or Search employees.
+- `/add` - Add a new employee.
+- `/view/edit/<employee_name>` - Edit an existing employee's details.
+- `/delete/<employee_name>` - Delete an employee.
+- - `/search/<employee_name>` - View an employee details.
+ 
+## Database Schema
+
+The application uses the following database schema:
+
+- `Users` table:
+  - `ID` (Primary Key)
+  - `NAME` (VARCHAR)
+  - `AGE` (INT)
+  - `DEPARTMENT` (VARCHAR)
 
 ## Contributing
 
